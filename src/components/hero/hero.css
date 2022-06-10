@@ -1,0 +1,215 @@
+.hero--container {
+    display: flex;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.hero--left {
+    display: flex;
+    align-items: center;
+    flex: 2;
+    margin: 0 0 0 10rem;
+}
+
+.hero--left-wrapper {
+    padding: 10rem;
+}
+.hero--intro {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.hero--name {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.hero--title {
+    height: 3rem;
+    overflow: hidden;
+}
+.hero--wrapper-item {
+    height: 3.2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+}
+.hero--title-wrapper {
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+}
+@keyframes move {
+    25% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    75% {
+        transform: translateY(-150px);
+    }
+    100% {
+        transform: translateY(-200px);
+    }
+}
+/* ----------------------------------------------------------------------- */
+.hero--right {
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    color: black;
+    flex: 1;
+}
+
+.hero--me {
+    width: 20rem;
+    height: 20rem;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        var(--color-primary),
+        transparent
+    );
+    display: grid;
+    place-items: center;
+}
+
+.hero--me--image {
+    border-radius: 1rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+.hero--me--image:hover {
+    transform: rotate(0deg);
+}
+
+/*---------------------cta--------------------------*/
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/*--------------------socials ----------------------*/
+
+.header--socials {
+    position: absolute;
+    font-size: 2rem;
+    left: 15rem;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    gap: 0.8rem;
+}
+
+/*---------------scroll down ------------------------*/
+
+.scroll--down {
+    position: absolute;
+    left: 12rem;
+    bottom: 2rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/*--------------------------------------------------------*/
+@media (max-width: 1200px) {
+    .hero--container {
+        flex-direction: column;
+    }
+    .hero--right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        bottom: 7rem;
+    }
+    .hero--left-wrapper {
+        margin-top: -8rem;
+    }
+    .hero--left {
+        top: 1rem;
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero--wrapper-item {
+        text-align: center;
+    }
+    .scroll--down {
+        display: none;
+    }
+    .header--socials {
+        position: absolute;
+        font-size: 2rem;
+        left: 6rem;
+        display: flex;
+        flex-direction: column;
+        top: 29%;
+        transform: translate(-50%, -50%);
+        gap: 2rem;
+    }
+
+    .hero--title-wrapper {
+        margin-left: 0.25rem;
+    }
+}
+@media (max-width: 777px) {
+    .hero--left-wrapper {
+        margin-top: -5rem;
+    }
+
+    .header--socials {
+        top: 28%;
+    }
+}
+/*---------------------------small devices-----------------------------------*/
+
+@media (max-width: 1024px) {
+    .hero--me {
+        width: 30rem;
+        height: 30rem;
+        margin: 2rem auto 4rem;
+    }
+    .hero--content {
+        margin: 1rem 01.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero--me {
+        width: 20rem;
+        height: 20rem;
+        margin: 0 auto 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header--socials {
+        display: none;
+    }
+
+    .hero--name {
+        font-size: 2.2rem;
+    }
+    .hero--wrapper-item {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .hero--me {
+        width: 15rem;
+        height: 15rem;
+        margin: 0 auto 3rem;
+    }
+}
