@@ -2,7 +2,7 @@
 
 ## Projeto usando React
 
-## GitPage: https://douglasmonteirodev.github.io/meu-portifolio
+## GitPage: https://douglasmonteirodev.github.io/portfolio
 
 ## Informações
 
