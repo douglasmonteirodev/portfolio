@@ -1,22 +1,22 @@
 import React from "react";
-import "./portifolio.css";
+import "./portfolio.css";
 import data from "./Data";
 
-const Portifolio = () => {
+const Portfolio = () => {
     return (
         <section id='portifolio'>
             <h5>Recent projects</h5>
-            <h2>Portifolio</h2>
+            <h2>Portfólio</h2>
 
-            <div className='container portifolio--container'>
+            <div className='container portfolio--container'>
                 {data.map(({ id, image, title, github }) => {
                     return (
-                        <article key={id} className='portifolio--item'>
-                            <div className='portifolio--item-image'>
+                        <article key={id} className='portfolio--item'>
+                            <div className='portfolio--item-image'>
                                 <img src={image} alt={title} />
                             </div>
                             <h3>{title}</h3>
-                            <div className='portifolio--item-cta'>
+                            <div className='portfolio--item-cta'>
                                 <a
                                     href={github}
                                     className='btn'
@@ -34,4 +34,4 @@ const Portifolio = () => {
     );
 };
 
-export default Portifolio;
+export default Portfolio;

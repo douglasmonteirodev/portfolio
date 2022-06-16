@@ -12,25 +12,25 @@ const data = [
     {
         id: 1,
         image: IMG1,
-        title: "Space Flight News with React",
+        title: "Space Flight News",
         github: "https://github.com/douglasmonteirodev/space-flight",
     },
     {
         id: 2,
         image: IMG2,
-        title: "Smart Apple with React",
+        title: "Smart Apple",
         github: "https://github.com/douglasmonteirodev/smartapple",
     },
     {
         id: 3,
         image: IMG3,
-        title: "Netflix clone with React",
+        title: "Netflix clone",
         github: "https://github.com/douglasmonteirodev/netflixclone-com-react",
     },
     {
         id: 4,
         image: IMG4,
-        title: "Zip finder with React",
+        title: "Zip finder",
         github: "https://github.com/douglasmonteirodev/buscador-de-ceps-react",
     },
     {
@@ -42,7 +42,7 @@ const data = [
     {
         id: 6,
         image: IMG6,
-        title: "Calculator IMC with Typescript",
+        title: "Calculator IMC",
         github: "https://github.com/douglasmonteirodev/calc-imc-ts",
     },
     {
