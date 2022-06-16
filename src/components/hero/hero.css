@@ -163,23 +163,16 @@
     .hero--title-wrapper {
         margin-left: 0.25rem;
     }
-}
-@media (max-width: 777px) {
-    .hero--left-wrapper {
-        margin-top: -5rem;
-    }
 
-    .header--socials {
-        top: 28%;
-    }
-}
-/*---------------------------small devices-----------------------------------*/
-
-@media (max-width: 1024px) {
     .hero--me {
-        width: 30rem;
-        height: 30rem;
+        width: 28rem;
+        height: 28rem;
         margin: 2rem auto 4rem;
+        background: none;
+    }
+
+    .hero--me--image {
+        transform: rotate(0deg);
     }
     .hero--content {
         margin: 1rem 01.5rem;
@@ -191,6 +184,15 @@
         width: 20rem;
         height: 20rem;
         margin: 0 auto 3rem;
+    }
+}
+@media (max-width: 777px) {
+    .hero--left-wrapper {
+        margin-top: -5rem;
+    }
+
+    .header--socials {
+        top: 28%;
     }
 }
 
